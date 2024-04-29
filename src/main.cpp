@@ -61,7 +61,6 @@ void incrementPulse() {
   interval = 0;
 }
 
-
 void setup() {
   initDisplay();
 
@@ -87,7 +86,7 @@ void loop() {
     }
 
     pulseCount = 0;
-  } 
+  }
 
 
   displayCount();
