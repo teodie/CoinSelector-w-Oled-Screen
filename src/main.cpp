@@ -12,11 +12,6 @@
 #define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-// Initialize Pin to be used
-const byte startButtonPin = 17;
-const byte stopButtonPin = 16;
-const byte relayPin = 15;
-const byte buzzerPin = 14;
 const byte interruptPin = 2;
 
 // Count the pulse recieved
