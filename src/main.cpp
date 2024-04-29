@@ -26,6 +26,7 @@ volatile int interval = 0;
 int totalAmount = 0;
 const byte intervalSpan = 10;
 
+
 void initDisplay(){
     // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
   if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
@@ -73,7 +74,7 @@ void loop() {
 
   if(interval >= intervalSpan && pulseCount != 0){
 
-    if(pulseCount == 1){
+    if(pulseCount == 4){
       totalAmount += 1;
     }
 
@@ -81,7 +82,7 @@ void loop() {
       totalAmount += 5;
     }
 
-    if(pulseCount == 10){
+    if(pulseCount == 6){
       totalAmount += 10;
     }
 
